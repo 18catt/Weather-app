@@ -45,7 +45,7 @@ async function fetchWeather(){
     let city= cityName.value;
     console.log(city);
     try{
-    let data = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${API_KEY}`);
+    let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${API_KEY}`);
         let response= await data.json();
         loadingScreen.style.display="none";
         searchDisplay.style.display="block";
